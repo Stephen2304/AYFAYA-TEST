@@ -148,7 +148,7 @@
           </a>
           <form method="POST" action="{{ route('logout') }}">
             @csrf
-            <a href="#" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();" class="dropdown-item dropdown-footer">Deconexion</a>
+            <a href="#" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();" class="dropdown-item dropdown-footer"><i class="fas fa-sign-out" aria-hidden="true"></i>Deconexion</a>
         </form>
         </div>
       </li>

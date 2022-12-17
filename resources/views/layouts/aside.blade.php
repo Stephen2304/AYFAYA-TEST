@@ -13,9 +13,34 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{Auth::user()->nom}} {{Auth::user()->prenom}}</a>
         </div>
       </div>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            @role('admin')
+            <li class="nav-item">
+                <a href=" {{route("users.index")}} " class="nav-link">
+                    <i class="nav-icon fa fa-user-plus" aria-hidden="true"></i>
+                <p>
+                    Utilisateurs
+                    <span class="badge badge-info right">2</span>
+                </p>
+                </a>
+            </li>
+            @endrole
+            <li class="nav-item">
+                <a href="{{route("rdv.index")}}" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                    Rendez-vous
+                    <span class="badge badge-info right">2</span>
+                </p>
+                </a>
+            </li>
+        </ul>
+      </nav>
+
     </div>
     <!-- /.sidebar -->
   </aside>

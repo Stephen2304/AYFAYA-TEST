@@ -29,12 +29,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Dashboard</h1>
+                <h1 class="m-0">Listing des patients</h1>
               </div><!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Dashboard v1</li>
+                  <li class="breadcrumb-item"><a href="{{route("users.index")}}">Home</a></li>
+                  <li class="breadcrumb-item active">Utilisateurs</li>
                 </ol>
               </div><!-- /.col -->
             </div><!-- /.row -->
@@ -55,9 +55,6 @@
             <!-- /.row -->
             <!-- Main row -->
                 <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title">DataTable with default features</h3>
-                    </div>
                     <!-- /.card-header -->
                     <div class="card-body">
                       <table id="example1" class="table table-bordered table-striped">
@@ -161,7 +158,7 @@
                           </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                         <input type="submit" class="btn btn-primary" value="Enregistrer"></button> 
                     </div>
                 </form>

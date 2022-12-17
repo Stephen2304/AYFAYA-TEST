@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
        User::create([
             'nom' => 'user',
             'prenom' => 'stephen',
-            'email' => 'user@gmail.com',
+            'email' => 'patient@gmail.com',
             'dateNaissance' => '2000-01-01',
             'telephone' => '+237698803159',
             'adresse' => 'Douala',

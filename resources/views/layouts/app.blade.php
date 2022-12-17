@@ -34,9 +34,10 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    @include('layouts.navigation')
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+            
             @include('layouts.aside')
 
             <!-- Page Heading -->
@@ -54,6 +55,7 @@
             </main>
         </div>
     </body>
+    @yield('scripts')
     <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
