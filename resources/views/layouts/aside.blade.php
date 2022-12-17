@@ -24,7 +24,6 @@
                     <i class="nav-icon fa fa-user-plus" aria-hidden="true"></i>
                 <p>
                     Utilisateurs
-                    <span class="badge badge-info right">2</span>
                 </p>
                 </a>
             </li>
@@ -34,7 +33,6 @@
                 <i class="nav-icon far fa-calendar-alt"></i>
                 <p>
                     Rendez-vous
-                    <span class="badge badge-info right">2</span>
                 </p>
                 </a>
             </li>
